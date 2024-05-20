@@ -1,6 +1,7 @@
 # Mat-riaProg1
 ##livros biblioteca
 #codigo em string 
+#lista
 livros = []
 
 #representa ranges que vão guardar os textos o nome do livro
@@ -17,10 +18,17 @@ for i in range(3):
 
 #estrutura if ,else 
  
+if desenho == "sim":
+    print(capa1)
+    desenhos.append("sim")
+elif desenho == "não":
+    print(capa2)
+    desenhos.append("não")
+else:
+    print("Respostas aceitas: sim ou não")
 
 
-
-# Imprime a lista de livros e desenhos
+# Imprime a lista de livros 
 print("Livros:", livros)
 
 #verifica o nome do livro que você deseja verificar e a lista de livros, ela retorna True se o livro ja estiver na lista e False se não
